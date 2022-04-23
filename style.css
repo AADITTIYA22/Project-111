@@ -1,0 +1,27 @@
+body
+{
+  color: white;
+  background:#a00aa0;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #snap
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#resultGesture_1 ,#resultGesture_2  
+{
+  color: black;
+}
+.GestureName
+{
+  font-size: 30px;
+}
+.gesture
+{
+  font-size:30px;
+}

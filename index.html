@@ -1,0 +1,74 @@
+ 
+<html>
+  <head>
+    <title>GESTURE WEB APPLICATON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center> 
+      <h2 class="btn btn-warning heading">GESTURE WEB APPLICATON<br>
+      <span>&#128076;</span>
+      <span>&#128074;</span>
+      <span>&#128077;</span>
+      <span>&#128070;</span>
+      <span>&#128079;</span>
+      </h2>
+  
+      <br><br>
+
+      <p style="font-size: 22px;">Take a selfie of a gesture of your hand to know it's meaning
+      	<br>
+        <b >On th following gestures the modle is trained - </b>
+        <br>
+        <b ><span>&#128076;</span>|<span>&#128074;</span>|<span>&#128077;</span></b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Webcam - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button style="color:crimson;" class="btn btn-info" onclick="takesnap()">Take Snapshot</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label style="color: aquamarine; font-size: 20px; background-color: orange; border-radius: 10px;">Predictions - </label>
+        <br>
+        <br>
+          <label>Prediction 1</label>
+          <p class="gestureName" id="resultGesture_1"></p>
+          <p class="gesture" id="resultEmoji_1"></p>
+  
+          <label>Prediction 2</label>
+          <p class="gestureName" id="resultGesture_2"></p>
+          <p class="gesture" id="resultGesture_2"></p>
+        </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="snap"></div>
+        <br><br>
+        <button style="color:crimson;" class="btn btn-info" onclick="show_gesture()">Predict Gesture</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
